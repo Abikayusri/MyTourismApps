@@ -1,4 +1,4 @@
-package com.dicoding.tourismapp.core.data.source.remote.network
+package abika.sinau.mytourismapp.core.data.source.remote.network
 
 sealed class ApiResponse<out R> {
     data class Success<out T>(val data: T) : ApiResponse<T>()

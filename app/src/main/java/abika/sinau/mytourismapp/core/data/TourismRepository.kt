@@ -9,8 +9,8 @@ import abika.sinau.mytourismapp.domain.model.Tourism
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Transformations
 import com.dicoding.tourismapp.core.data.NetworkBoundResource
-import com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse
-import com.dicoding.tourismapp.core.data.source.remote.response.TourismResponse
+import abika.sinau.mytourismapp.core.data.source.remote.network.ApiResponse
+import abika.sinau.mytourismapp.core.data.source.remote.response.TourismResponse
 
 class TourismRepository private constructor(
     private val remoteDataSource: RemoteDataSource,

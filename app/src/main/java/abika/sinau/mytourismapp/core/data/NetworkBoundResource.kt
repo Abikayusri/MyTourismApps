@@ -4,7 +4,7 @@ import abika.sinau.mytourismapp.core.data.Resource
 import abika.sinau.mytourismapp.core.utils.AppExecutors
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import com.dicoding.tourismapp.core.data.source.remote.network.ApiResponse
+import abika.sinau.mytourismapp.core.data.source.remote.network.ApiResponse
 
 abstract class NetworkBoundResource<ResultType, RequestType>(private val mExecutors: AppExecutors) {
 

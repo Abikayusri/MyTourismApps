@@ -2,7 +2,7 @@ package abika.sinau.mytourismapp.core.utils
 
 import abika.sinau.mytourismapp.core.data.source.local.entity.TourismEntity
 import abika.sinau.mytourismapp.domain.model.Tourism
-import com.dicoding.tourismapp.core.data.source.remote.response.TourismResponse
+import abika.sinau.mytourismapp.core.data.source.remote.response.TourismResponse
 
 
 /**

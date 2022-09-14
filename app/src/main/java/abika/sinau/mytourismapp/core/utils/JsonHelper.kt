@@ -2,7 +2,7 @@ package abika.sinau.mytourismapp.core.utils
 
 import abika.sinau.mytourismapp.R
 import android.content.Context
-import com.dicoding.tourismapp.core.data.source.remote.response.TourismResponse
+import abika.sinau.mytourismapp.core.data.source.remote.response.TourismResponse
 import org.json.JSONObject
 import java.io.IOException
 
