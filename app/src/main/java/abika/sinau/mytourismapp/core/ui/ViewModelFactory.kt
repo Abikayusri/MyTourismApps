@@ -1,13 +1,13 @@
 package abika.sinau.mytourismapp.core.ui
 
+import android.content.Context
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
 import abika.sinau.mytourismapp.core.di.Injection
 import abika.sinau.mytourismapp.core.domain.usecase.TourismUseCase
 import abika.sinau.mytourismapp.detail.DetailTourismViewModel
 import abika.sinau.mytourismapp.favorite.FavoriteViewModel
 import abika.sinau.mytourismapp.home.HomeViewModel
-import android.content.Context
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
 
 class ViewModelFactory private constructor(private val tourismUseCase: TourismUseCase) :
     ViewModelProvider.NewInstanceFactory() {
