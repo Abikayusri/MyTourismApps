@@ -1,13 +1,7 @@
-package abika.sinau.mytourismapp.domain.model
+package abika.sinau.mytourismapp.core.domain.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
-
-
-/**
- * @author by Abika Chairul Yusri on 9/13/2022
- */
-// TODO: 1. Tambahkan response pada module domain
 
 @Parcelize
 data class Tourism(

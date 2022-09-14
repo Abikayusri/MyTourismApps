@@ -1,6 +1,5 @@
 package abika.sinau.mytourismapp
 
-import abika.sinau.mytourismapp.R
 import abika.sinau.mytourismapp.databinding.ActivityMainBinding
 import abika.sinau.mytourismapp.favorite.FavoriteFragment
 import abika.sinau.mytourismapp.home.HomeFragment
@@ -12,7 +11,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     private lateinit var binding: ActivityMainBinding

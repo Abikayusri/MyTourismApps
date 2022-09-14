@@ -1,9 +1,13 @@
 package abika.sinau.mytourismapp.favorite
 
-import abika.sinau.mytourismapp.core.domain.usecase.TourismUseCase
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
+import abika.sinau.mytourismapp.core.domain.usecase.TourismUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class FavoriteViewModel(tourismUseCase: TourismUseCase) : ViewModel() {
-    val favoriteTourism = tourismUseCase.getFavoriteTourism()
+@HiltViewModel
+class FavoriteViewModel @Inject constructor(tourismUseCase: TourismUseCase) : ViewModel() {
+    val favoriteTourism = tourismUseCase.getFavoriteTourism().asLiveData()
 }
 

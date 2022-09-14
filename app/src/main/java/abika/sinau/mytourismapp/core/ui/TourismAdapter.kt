@@ -1,13 +1,14 @@
 package abika.sinau.mytourismapp.core.ui
 
-import abika.sinau.mytourismapp.R
-import abika.sinau.mytourismapp.databinding.ItemListTourismBinding
-import abika.sinau.mytourismapp.domain.model.Tourism
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import abika.sinau.mytourismapp.R
+import abika.sinau.mytourismapp.core.domain.model.Tourism
+import java.util.ArrayList
+import abika.sinau.mytourismapp.databinding.ItemListTourismBinding
 
 class TourismAdapter : RecyclerView.Adapter<TourismAdapter.ListViewHolder>() {
 
@@ -22,9 +23,7 @@ class TourismAdapter : RecyclerView.Adapter<TourismAdapter.ListViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
-        ListViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.item_list_tourism, parent, false)
-        )
+        ListViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_list_tourism, parent, false))
 
     override fun getItemCount() = listData.size
 

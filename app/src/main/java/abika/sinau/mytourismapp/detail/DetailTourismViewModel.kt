@@ -1,11 +1,14 @@
 package abika.sinau.mytourismapp.detail
 
-import abika.sinau.mytourismapp.core.domain.usecase.TourismUseCase
-import abika.sinau.mytourismapp.domain.model.Tourism
 import androidx.lifecycle.ViewModel
+import abika.sinau.mytourismapp.core.domain.model.Tourism
+import abika.sinau.mytourismapp.core.domain.usecase.TourismUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class DetailTourismViewModel(private val tourismUseCase: TourismUseCase) : ViewModel() {
-    fun setFavoriteTourism(tourism: Tourism, newStatus: Boolean) =
+@HiltViewModel
+class DetailTourismViewModel @Inject constructor(private val tourismUseCase: TourismUseCase) : ViewModel() {
+    fun setFavoriteTourism(tourism: Tourism, newStatus:Boolean) =
         tourismUseCase.setFavoriteTourism(tourism, newStatus)
 }
 
